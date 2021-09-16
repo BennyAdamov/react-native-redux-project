@@ -48,9 +48,11 @@ const NbaTeams: React.FC<Props> = ({ team }) => {
             </Modal.Header>
             <Modal.Body>
               <Text fontSize="lg">From the city of {team.city}</Text>
-              <Text fontSize="lg">
-                Playing at the {team.leagues.standard.confName}ern Conference
-              </Text>
+              {team.leagues.standard.confName && (
+                <Text fontSize="lg">
+                  Playing at the {team.leagues.standard.confName}ern Conference
+                </Text>
+              )}
             </Modal.Body>
           </Center>
         </Modal.Content>

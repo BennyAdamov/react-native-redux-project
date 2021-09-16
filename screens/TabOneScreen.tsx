@@ -1,12 +1,12 @@
 import * as React from "react";
 import { StyleSheet } from "react-native";
-import { View } from "../components/Themed";
 import { RootTabScreenProps } from "../types";
 import { useSelector, useDispatch } from "react-redux";
 import { ApplicationState, onAvailability } from "../redux";
 import { useEffect, useState } from "react";
 import NbaTeams from "./NbaTeams";
 import {
+  View,
   Divider,
   Button,
   ScrollView,
@@ -45,7 +45,13 @@ export default function TabOneScreen({
 
   return (
     <NativeBaseProvider>
-      <View style={styles.container}>
+      <View
+        style={{
+          flex: 1,
+          alignItems: "center",
+          paddingVertical: 10,
+        }}
+      >
         <Button.Group
           variant="solid"
           isAttached
@@ -99,20 +105,20 @@ export default function TabOneScreen({
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    paddingVertical: 10,
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
-    marginVertical: 10,
-  },
-  separator: {
-    marginVertical: 20,
-    height: 1,
-    width: "80%",
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     alignItems: "center",
+//     paddingVertical: 10,
+//   },
+//   title: {
+//     fontSize: 20,
+//     fontWeight: "bold",
+//     marginVertical: 10,
+//   },
+//   separator: {
+//     marginVertical: 20,
+//     height: 1,
+//     width: "80%",
+//   },
+// });
