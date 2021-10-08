@@ -27,8 +27,7 @@ export const onAvailability = () => {
         url: "https://api-nba-v1.p.rapidapi.com/teams/league/standard",
         headers: {
           "x-rapidapi-host": "api-nba-v1.p.rapidapi.com",
-          "x-rapidapi-key":
-            "b01bd4cd67msh344f56e864cfcf7p1b0207jsn9d938ccf0efd",
+        
         },
       }).then((response) => {
         const teams = response.data.api.teams;
