@@ -105,20 +105,3 @@ export default function TabOneScreen({
   );
 }
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     alignItems: "center",
-//     paddingVertical: 10,
-//   },
-//   title: {
-//     fontSize: 20,
-//     fontWeight: "bold",
-//     marginVertical: 10,
-//   },
-//   separator: {
-//     marginVertical: 20,
-//     height: 1,
-//     width: "80%",
-//   },
-// });
